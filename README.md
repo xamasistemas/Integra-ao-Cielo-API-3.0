@@ -64,9 +64,9 @@ sale.Customer = customer;
  try
 {
   // Nova transação
-  var transacion = new CieloEcommerce(merchant, environment, _httpClient);
+  var transaction = new CieloEcommerce(merchant, environment, _httpClient);
   
-  sale = await transacion.CreateSaleAsync(sale);
+  sale = await transaction.CreateSaleAsync(sale);
   var boletoUrl = sale.Payment.Url; // Endereço do boleto
 }
 catch(Exception e)
@@ -107,10 +107,10 @@ sale.Customer = customer;
  try
 {
   // Nova transação
-  var transacion = new CieloEcommerce(merchant, environment, _httpClient);
+  var transaction = new CieloEcommerce(merchant, environment, _httpClient);
   
-  sale = await transacion.CreateSaleAsync(sale);
-  var capture = await transacion.CaptureSaleAsync(paymentID); // autorização do cartão
+  sale = await transaction.CreateSaleAsync(sale);
+  var capture = await transaction.CaptureSaleAsync(paymentID); // autorização do cartão
   
 }
 catch(Exception e)
