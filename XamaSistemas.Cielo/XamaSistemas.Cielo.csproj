@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Xamã Soluções e Sistemas</Authors>
+    <Product>XamaSistemas - Cielo</Product>
+    <Copyright>Xamã Soluções e Sistemas - 2021</Copyright>
+    <PackageProjectUrl>https://xamasistemas.com.br</PackageProjectUrl>
+    <Version>0.9.0</Version>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageLicenseExpression>GNU</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="5.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
